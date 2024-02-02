@@ -1,0 +1,13 @@
+# Terraform state files
+**/*.tfstate
+**/*.tfstate.*
+**/terraform.tfstate.backup
+
+# Terraform lock file
+**/.terraform.lock.hcl
+
+# Terraform plan output
+**/*.tfplan
+
+# Ignore Terraform workspace directories
+**/.terraform/
