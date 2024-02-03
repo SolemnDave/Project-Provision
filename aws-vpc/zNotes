@@ -1,0 +1,14 @@
+In the aws_vpc resource block, you specify the instance tenancy with the option of choosing between "default", "dedicated", and "host".
+
+Default
+Instances launched in a VPC with instance_tenancy set to "default" will be on shared hardware by default. 
+This means that the physical server hosting your instance may also host instances from other AWS customers.
+
+Dedicated
+With "dedicated" tenancy, all instances launched in the VPC will run on dedicated physical servers. 
+This ensures that the server is exclusively reserved for your use, without sharing physical resources with other customers.
+
+Host
+Though not directly specified as an option for instance_tenancy in a VPC, AWS also offers the concept of launching instances on a Dedicated Host. 
+A Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use.
+

@@ -1,0 +1,5 @@
+terraform init
+terraform init -upgrade  
+
+terraform plan
+export TF_LOG=DEBUG terraform plan
