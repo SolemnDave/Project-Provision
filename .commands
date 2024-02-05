@@ -2,4 +2,13 @@ terraform init
 terraform init -upgrade  
 
 terraform plan
-export TF_LOG=DEBUG terraform plan
+
+terraform apply
+terraform apply -auto-approve
+
+terraform show
+
+terraform destory
+terraform destory -auto-approve
+
+export TF_LOG=DEBUG
