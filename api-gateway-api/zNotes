@@ -1,0 +1,4 @@
+route_selection_expression is only applicable when the protocol_type is "WEBSOCKET"
+
+
+Provisioning a protocol type "REST" requires alot more syntax essentially different from the way a WebSocket or HTTP is provisioned with terraform
