@@ -1,0 +1,9 @@
+List of the types of varibles you can declare.
+
+string: Represents text.
+number: Represents a numeric value, which can be an integer or a floating-point number.
+bool: Represents a boolean value, which can be either true or false.
+list(<TYPE>): Represents a list (array) of values where <TYPE> can be any other type, like list(string) for a list of strings.
+map(<TYPE>): Represents a map (object/hash/dictionary) where <TYPE> can be any other type, like map(string) for a map with string values.
+object({<ATTR_NAME> = <TYPE>, ... }): Represents a complex structure with specified named attributes and their types.
+tuple([<TYPE>, ...]): Represents a fixed-size list where each element can have a different type.
