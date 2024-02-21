@@ -7,3 +7,10 @@ list(<TYPE>): Represents a list (array) of values where <TYPE> can be any other 
 map(<TYPE>): Represents a map (object/hash/dictionary) where <TYPE> can be any other type, like map(string) for a map with string values.
 object({<ATTR_NAME> = <TYPE>, ... }): Represents a complex structure with specified named attributes and their types.
 tuple([<TYPE>, ...]): Represents a fixed-size list where each element can have a different type.
+
+
+
+Be sure to set your environment variables before running terraform apply in each directory. In my case : 
+
+export AWS_PROFILE=typescripter
+export AWS_DEFAULT_REGION=us-east-1
