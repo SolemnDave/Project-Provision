@@ -1,24 +1,27 @@
 So originally I tried to run:
 
-domain_name        = "example.com"
-validation_method  = "DNS"
+domain_name = "example.com"
+validation_method = "DNS"
 
-But I learned very quickly after running running "terraform apply" that this did not work. 
+But I learned very quickly after running running "terraform apply" that this did not work.
 So I looked into it, and it doesn't work because I simply dont have control over the domain "example.com"
 
-To clarify, when you request a certificate for a domain and choose DNS as the validation method, AWS ACM generates 
-a unique CNAME record that you must add to your domain's DNS configuration. This record serves as proof to AWS 
-that you control the domain for which you're requesting the certificate. The process works successfully for domains 
+To clarify, when you request a certificate for a domain and choose DNS as the validation method, AWS ACM generates
+a unique CNAME record that you must add to your domain's DNS configuration. This record serves as proof to AWS
+that you control the domain for which you're requesting the certificate. The process works successfully for domains
 you control and have DNS records for because you can fulfill the DNS validation requirement, otherwise you could not provision a certificate.
 
 Luckily for me, I already have a hosted zone in route 53 and have records for domain names prior to attempting to provision a acm certificate.
 
 So keep that in mind when trying to provision an AWS acm certificate, you must first ensure that you have a record in your DNS configuration proving
-to amazon that you have control over your dommain name. 
+to amazon that you have control over your dommain name.
 
 So now when I run:
 
-domain_name        = "blog.solemndave.com"
-validation_method  = "DNS"
+domain_name = "blog.solemndave.com"
+validation_method = "DNS"
 
 It successfully is provisioned with no issues.
+
+Happy Learning,
+SolemnDave

@@ -10,7 +10,7 @@ tuple([<TYPE>, ...]): Represents a fixed-size list where each element can have a
 
 
 
-Be sure to set your environment variables before running terraform apply in each directory. In my case : 
+Be sure to set your environment variables before running terraform apply in each directory. 
 
-export AWS_PROFILE=typescripter
-export AWS_DEFAULT_REGION=us-east-1
+export AWS_PROFILE=your-aws-username
+export AWS_DEFAULT_REGION=your-aws-region

@@ -41,3 +41,4 @@ resource "aws_dynamodb_table" "davids-dynamodb-table" {
     Environment = "production"
   }
 }
+
